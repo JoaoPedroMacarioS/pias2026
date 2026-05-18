@@ -1,0 +1,177 @@
+
+
+
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 30px;
+
+}
+
+.app h1 {
+    font-weight: 25px;
+    color: darkgreen;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+
+.quiz h2{
+    font-size: 18px;
+    color: darkolivegreen;
+    font-weight: 600;
+}
+
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([diabled]) {
+
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.corret {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+
+
+body{
+    background: chartreuse;
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca"
+        "braco corpo corpo"
+        "perna perna perna";
+    grid-template-rows: 200px auto 200px;
+    grid-template-columns: 200px auto auto;
+    font-family: sans-serif
+}
+
+header{
+    grid-area: cabeca;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 50px
+}
+
+
+aside{
+    grid-area: braco;
+    background-color: blue;
+}
+
+main{
+    grid-area: corpo;
+    background-color: blueviolet;
+}
+
+footer{
+    grid-area: perna;
+    background-color: lightskyblue;
+    text-align: center;
+    padding-top: 15px
+
+}
+
+@media only screen and (max-width: 850px) {
+    body{
+        grid-template-areas: 
+                           "cabeca"
+                           "corpo"
+                           "perna";
+        grid-template-columns: auto;
+        grid-template-rows: 150px auto 200px;
+    }
+    aside{
+        display: none;
+    }
+}
+
+.mae{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: yellow 2px solid;
+    background-color: aquamarine;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.img_card{
+    width: 300px;
+    height: auto;
+}
+
+.texto_card{
+    color: deeppink;
+    font-size: x-large;
+}
+
+.preco_card{
+    color:darkorange;
+    font-size: xx-large;
+}
+
+.button{
+    background-color: rgb(229, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+
+    padding-bottom: 5px;
+}
+
+.button:hover {
+    background-color: #ff9900;
+}
+
